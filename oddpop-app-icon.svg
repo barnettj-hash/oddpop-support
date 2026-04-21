@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">OddPop app icon</title>
+  <desc id="desc">A neon 3 by 3 puzzle grid with a yellow odd tile.</desc>
+  <defs>
+    <linearGradient id="tile" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#54f7ff" />
+      <stop offset="0.52" stop-color="#18bfff" />
+      <stop offset="1" stop-color="#1472ff" />
+    </linearGradient>
+    <linearGradient id="odd" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#fff400" />
+      <stop offset="1" stop-color="#ff8a00" />
+    </linearGradient>
+    <filter id="cyanGlow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <filter id="pinkGlow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="10" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="512" height="512" rx="86" fill="#070711" />
+  <rect x="38" y="38" width="436" height="436" rx="72" fill="#0c0c1c" stroke="#6228ff" stroke-width="2" />
+  <path d="M78 306c46-132 232 12 326-86" fill="none" stroke="#ff38dd" stroke-width="20" stroke-linecap="round" filter="url(#pinkGlow)" />
+  <path d="M82 320c78 76 245 78 348-26" fill="none" stroke="#32eaff" stroke-width="18" stroke-linecap="round" filter="url(#cyanGlow)" />
+  <g filter="url(#cyanGlow)">
+    <rect x="98" y="92" width="88" height="72" rx="10" fill="url(#tile)" stroke="#9bfaff" stroke-width="6" />
+    <rect x="212" y="92" width="88" height="72" rx="10" fill="url(#tile)" stroke="#9bfaff" stroke-width="6" />
+    <rect x="326" y="92" width="88" height="72" rx="10" fill="url(#tile)" stroke="#9bfaff" stroke-width="6" />
+    <rect x="98" y="204" width="88" height="72" rx="10" fill="url(#tile)" stroke="#9bfaff" stroke-width="6" />
+    <rect x="326" y="204" width="88" height="72" rx="10" fill="url(#tile)" stroke="#9bfaff" stroke-width="6" />
+    <rect x="98" y="316" width="88" height="72" rx="10" fill="url(#tile)" stroke="#9bfaff" stroke-width="6" />
+    <rect x="212" y="316" width="88" height="72" rx="10" fill="url(#tile)" stroke="#9bfaff" stroke-width="6" />
+    <rect x="326" y="316" width="88" height="72" rx="10" fill="url(#tile)" stroke="#9bfaff" stroke-width="6" />
+  </g>
+  <rect x="212" y="204" width="88" height="72" rx="10" fill="url(#odd)" stroke="#fff75a" stroke-width="6" filter="url(#pinkGlow)" />
+  <path d="M249 217h22l-5 42h-12z" fill="#f20c18" />
+  <circle cx="260" cy="266" r="10" fill="#f20c18" />
+  <path d="M416 318l12 34 34 12-34 12-12 34-12-34-34-12 34-12z" fill="#fff6ff" stroke="#ff38dd" stroke-width="5" />
+  <path d="M92 348l58 18-38 8 9 37z" fill="#fff400" stroke="#ff8a00" stroke-width="5" />
+  <circle cx="80" cy="136" r="4" fill="#32eaff" />
+  <circle cx="398" cy="82" r="4" fill="#ff38dd" />
+  <circle cx="430" cy="152" r="4" fill="#ff38dd" />
+  <circle cx="176" cy="418" r="4" fill="#32eaff" />
+</svg>
